@@ -1,3 +1,5 @@
+<!-- i totally missed the part of the criteria where it said to edit this on github. So I got up to typing about bracket expressions before I notice, I apologize!! -->
+
 <!-- d = digit, w = word based W = non word based(symbol/white space), d = non digit(any character like W), s = white space
 . = any character, * = 0 or more. so i'm assuming regex for an email would be like .* /@ /. .* .. [] explains what characters it can be, like [a-d1-4_-] means it'll look for any letter a through d, any number 1 through 4, or any underscore or hyphen. the hyphen between letters or numbers doesn't count. it will also only look for lowercase letters. If it was [^a-d] it'd only look for the uppercase letters A through D, -->
 
