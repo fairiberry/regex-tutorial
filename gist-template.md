@@ -108,12 +108,25 @@ These will look for strings that match any of the conditions in the subexpressio
 
 ### Greedy and Lazy Match
 
+Greedy quantifiers are like the ones I described above. They will look for as many matches as meets the criteria of the search. Adding a ```?``` to the end of them will make them lazy, so it'll search for the least amount of possible matches.
+
 ### Boundaries
+
+Boundaries are searched for using another anchor, ```\b```. This one will search for word characters (ie letters), and it'll have to be what's specified by the anchor.
+
+If you use ```\bhello\b```, the regex will search for the world ```hello```, but will not match with anything more, such as ```hellothere```.
 
 ### Back-references
 
+Back references are used to search for the same criteria as a previous subexpression in a regex.
+
 ### Look-ahead and Look-behind
+
+Lookaround assertions, such as look-ahead and look-behind, search like a boundary would. They look for a match of the string in them, then select the text before or after them.
+
+- ```(?=example)``` looks for what follows the letters ```ex```, such as the word ```example``` or ```explain```.
+- ```(?<=ing)``` would look for a string that ends in ```ing```, such as ```helping``` or ```teaching```.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+My name is Farrah Syed. You can find me on [GitHub](https://github.com/fairiberry). Have a wonderful day, thank you for reading!
